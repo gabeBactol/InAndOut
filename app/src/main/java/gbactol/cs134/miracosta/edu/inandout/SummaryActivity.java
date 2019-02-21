@@ -34,7 +34,7 @@ public class SummaryActivity extends AppCompatActivity {
         //used to grab information from OrderActivity.java
         Intent transferInfo = getIntent();
 
-        //display any of the values
+        //display any passed in from the intent of the values
         orderTotal.setText( "Order Total: $" +  transferInfo.getStringExtra("Total"));
         itemsOrdered.setText(transferInfo.getStringExtra("numItems"));
         subTotalValue.setText("$" + transferInfo.getStringExtra("subTotal"));

@@ -20,6 +20,9 @@ import gbactol.cs134.miracosta.edu.inandout.model.Order;
 
 public class OrderActivity extends AppCompatActivity {
 
+    //Member variables to format as currency (NumberFormat)
+    NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.getDefault());
+
     //variables where user enters values
     private EditText doubleDoublesValue;
     private EditText cheeseBurgerValue;
@@ -66,11 +69,12 @@ public class OrderActivity extends AppCompatActivity {
     {
 
         //the intent is used to transfer information between classes
+        Intent helpTransfer = new Intent(this, SummaryActivity.class);
+
 
         //all these if statements are a bunch of checks on whether the user inputs
         //a number in the program, and tries calculate a blank value
         //should any of these values be blank, the value is zero
-        Intent helpTransfer = new Intent(this, SummaryActivity.class);
         if(doubleDoublesValue.getText().toString().equals(""))
         {
             newOrder.setDoubleDoubles(0);
@@ -134,6 +138,13 @@ public class OrderActivity extends AppCompatActivity {
         String s = String.format("%.2f", newOrder.calculateSubtotal());
         String tax = String.format("%.2f", newOrder.calculateTax());
         String t = String.format("%.2f", newOrder.calculateTotal());
+
+        //converts the values to a specific currency based on their locale
+        /*
+        s = currency.format(Double.parseDouble(s));
+        tax = currency.format(Double.parseDouble(tax));
+        t = currency.format(Double.parseDouble(t))
+        */
 
         //These values are transfered into the other class
         total.putExtra("numItems", String.valueOf(newOrder.getNumberItemsOrdered()));

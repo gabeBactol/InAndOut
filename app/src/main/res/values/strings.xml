@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">In And Out</string>
+    <string name="double_double_text">Double Double $3.60</string>
+    <string name="double_double_value">0</string>
+    <string name="cheeseburger_text">Cheeseburger $2.15</string>
+    <string name="cheeseburger_Value">0</string>
+    <string name="french_fries_text">French Fries $1.65</string>
+    <string name="french_fries_value">0</string>
+    <string name="shakes_text">Shakes $2.20</string>
+    <string name="shakes_value">0</string>
+    <string name="small_text">Small $1.45</string>
+    <string name="small_value">0</string>
+    <string name="place_order_text">Place an Order</string>
+    <string name="medium_text">Medium $1.55</string>
+    <string name="medium_value">0</string>
+    <string name="large_text">Large $1.75</string>
+    <string name="large_Value">0</string>
+    <string name="fountain_drinks_text">Fountain Drinks (pick size)</string>
+    <string name="place_order_button">Place Order</string>
+    <string name="items_ordered_text">Items Ordered:</string>
+    <string name="items_ordered_value">0</string>
+    <string name="subtotalText">Subtotal:</string>
+    <string name="tax_text">Tax (8%)</string>
+    <string name="tax_value">0.00</string>
+    <string name="subTotalValue">0.00</string>
+    <string name="order_total">Order Total: $0.00</string>
+    <string name="start_new_order_button">Start New Order</string>
+</resources>
